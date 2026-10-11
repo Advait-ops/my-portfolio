@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style2.css">
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Advait Adkine</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+
+      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a href="https://www.instagram.com/narendramodi/" target="blank">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Advait Adkine 👋</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam assumenda est perspiciatis labore quasi,
+          iure dignissimos, libero, omnis sint necessitatibus ad. Hic expedita eligendi tenetur quisquam id quaerat
+          alias cumque, autem voluptatem in iure ut laudantium tempora cupiditate voluptate est nemo impedit, quidem
+          iusto, provident aperiam. Iste, repellat aperiam!</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+
+          <a href="#projects">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Projects</span>
+          </a>
+
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Testimony</span>
+          </a>
+
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/sfsd.png" alt="john doe headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        I have experience with React, HTML, CSS, C, and Python, with a strong focus on modern frontend architecture and
+        state management using React Hooks. I focus on writing clean, reusable code, solving problems logically, and
+        continuously expanding my skillset.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/react-logo.svg" alt="react logo">
+          <span>React</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="node logo">
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/icons8-c-programming-48.png" alt="css logo">
+          <span>C</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/icons8-python-48.png" alt="javascript logo">
+          <span>Python</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2.5: Projects -->
+    <section id="projects" class="projects-section">
+      <h2>Featured Projects</h2>
+      <div class="text">
+        Practical web applications highlighting frontend engineering, reactive state management, and real-world
+        implementations of React Hooks.
+      </div>
+
+      <div class="projects-grid">
+        <!-- Spotlight Project: React Hooks Toolkit & Dashboard -->
+        <article class="project-card featured-project">
+          <div class="project-banner">
+            <img src="images/react-hooks-dashboard.jpg" alt="React Hooks Toolkit & Dashboard Preview">
+            <div class="banner-badge">
+              <i class="fa-brands fa-react"></i> Featured • React Hooks
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-title-area">
+                <span class="project-type"><i class="fa-brands fa-react"></i> React 18 Application</span>
+                <h3>React Hooks Toolkit & Dashboard</h3>
+              </div>
+              <div class="project-actions-quick">
+                <button type="button" class="btn-demo-trigger" onclick="openHookModal('useState')">
+                  <i class="fa-solid fa-play"></i> Live Preview
+                </button>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              A comprehensive toolkit and interactive dashboard demonstrating core and advanced React Hooks. Built to
+              showcase state synchronization, lifecycle control, memoization optimizations, and clean custom hook
+              patterns.
+            </p>
+
+            <div class="project-features">
+              <div class="feature-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span><strong>Core Hooks:</strong> <code>useState</code> for responsive UI state and
+                  <code>useEffect</code> for API data lifecycle & subscription cleanups.</span>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-sliders"></i>
+                <span><strong>State Architecture:</strong> <code>useReducer</code> + <code>useContext</code> providing
+                  predictable multi-branch state flows.</span>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span><strong>Performance Tuning:</strong> <code>useMemo</code> and <code>useCallback</code> to
+                  eliminate redundant component re-renders.</span>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span><strong>Component Lifecycle & State:</strong> Clean reactive state flows with <code>useState</code>,
+                  <code>useEffect</code>, and <code>useReducer</code>.</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">React 18</span>
+              <span class="tag">useState</span>
+              <span class="tag">useEffect</span>
+              <span class="tag">useReducer</span>
+              <span class="tag">useContext</span>
+              <span class="tag">useMemo</span>
+              <span class="tag">useCallback</span>
+            </div>
+
+            <div class="project-links">
+              <button type="button" class="btn-primary" onclick="openHookModal('useState')">
+                <i class="fa-solid fa-laptop-code"></i> Try Interactive Preview
+              </button>
+              <a href="https://github.com/Advait-ops/My-portfolio" target="_blank" rel="noopener noreferrer"
+                class="btn-secondary">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Companion Secondary Cards -->
+        <div class="secondary-projects-grid">
+          <div class="mini-project-card">
+            <div class="mini-card-top">
+              <span class="hook-badge"><i class="fa-brands fa-react"></i> useReducer + useContext</span>
+              <h4>TaskFlow Workspace</h4>
+              <p>Predictable state management architecture without third-party libraries, dispatching typed actions
+                across nested components.</p>
+            </div>
+            <div class="mini-card-bottom">
+              <button type="button" class="card-link" onclick="openHookModal('useReducer')">
+                <span>Test Reducer Demo</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <a href="https://github.com/Advait-ops/My-portfolio" target="_blank" rel="noopener noreferrer"
+                class="card-link">
+                <i class="fa-brands fa-github"></i> Repo
+              </a>
+            </div>
+          </div>
+
+          <div class="mini-project-card">
+            <div class="mini-card-top">
+              <span class="hook-badge"><i class="fa-solid fa-arrows-rotate"></i> useEffect Lifecycle</span>
+              <h4>DataPulse Monitor</h4>
+              <p>Real-time lifecycle observer managing interval subscriptions, dependency change listeners, and unmount cleanups.</p>
+            </div>
+            <div class="mini-card-bottom">
+              <button type="button" class="card-link" onclick="openHookModal('useEffect')">
+                <span>Test Effect Demo</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <a href="https://github.com/Advait-ops/My-portfolio" target="_blank" rel="noopener noreferrer"
+                class="card-link">
+                <i class="fa-brands fa-github"></i> Repo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h2>About Me</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/sfsd.png">
+          <p>Advait Adkine</p>
+          <p>Student at SIT</p>
+        </div>
+
+        <div class="text">
+          I’m an aspiring software engineer with a strong foundation in programming, problem-solving, and logical
+          thinking. I enjoy building efficient, scalable solutions and continuously improving my skills through hands-on
+          projects. I’m driven by curiosity, clean code, and a desire to create impactful, real-world applications.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat fugit maiores atque architecto saepe
+          tenetur quasi reiciendis illum sint doloremque alias inventore, asperiores maxime pariatur totam hic assumenda
+          repudiandae, iusto quisquam nisi! Eaque doloremque perspiciatis minus voluptate dicta. A ratione autem dolor
+          iure libero numquam voluptatem nobis laborum et corporis.
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2026 Advait Adkine. All rights reserved.</p>
+
+        <div class="social-links">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="mailto:your@email.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- REACT HOOKS INTERACTIVE PLAYGROUND MODAL -->
+  <div id="hooks-modal" class="hooks-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-title">
+          <i class="fa-brands fa-react"></i>
+          <div>
+            <h3 id="modal-title">React Hooks Interactive Playground</h3>
+            <p>Live sandbox demonstrating state management & lifecycle hooks in real time</p>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" aria-label="Close modal" onclick="closeHookModal()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="hook-tabs">
+        <button type="button" class="hook-tab-btn active" data-tab="useState" onclick="switchTab('useState')">
+          <i class="fa-solid fa-calculator"></i> useState
+        </button>
+        <button type="button" class="hook-tab-btn" data-tab="useEffect" onclick="switchTab('useEffect')">
+          <i class="fa-solid fa-arrows-rotate"></i> useEffect
+        </button>
+        <button type="button" class="hook-tab-btn" data-tab="useReducer" onclick="switchTab('useReducer')">
+          <i class="fa-solid fa-list-check"></i> useReducer
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- TAB 1: useState -->
+        <div id="tab-useState" class="hook-tab-pane active">
+          <div class="playground-grid">
+            <div class="demo-card">
+              <h4><i class="fa-solid fa-hand-pointer"></i> Interactive State Counter</h4>
+              <p class="demo-hint">Click the buttons to trigger state updates. Notice how each state mutation triggers
+                UI synchronization.</p>
+
+              <div class="interactive-box">
+                <div id="counter-value" class="counter-display">0</div>
+                <div class="counter-controls">
+                  <button type="button" class="btn-ctrl btn-primary-ctrl" onclick="incrementCounter()">
+                    <i class="fa-solid fa-plus"></i> Increment
+                  </button>
+                  <button type="button" class="btn-ctrl" onclick="decrementCounter()">
+                    <i class="fa-solid fa-minus"></i> Decrement
+                  </button>
+                  <button type="button" class="btn-ctrl" onclick="resetCounter()">
+                    <i class="fa-solid fa-rotate-left"></i> Reset
+                  </button>
+                </div>
+                <div class="step-selector">
+                  <span>Step Size:</span>
+                  <select onchange="setCounterStep(this.value)">
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="action-history-box">
+                <h5>Action History Log</h5>
+                <ul id="counter-history" class="action-history-list">
+                  <li class="empty-note">No actions yet. Click buttons above!</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="code-state-panel">
+              <div class="code-box">
+                <div class="code-box-header"><span>CounterComponent.jsx</span><span>React</span></div>
+                <pre><code>const [count, setCount] = useState(0);
+const [step, setStep] = useState(1);
+
+const increment = () => {
+  setCount(prev => prev + step);
+};
+
+const decrement = () => {
+  setCount(prev => prev - step);
+};</code></pre>
+              </div>
+
+              <div class="state-inspector">
+                <div class="state-inspector-header"><i class="fa-solid fa-terminal"></i> Live State Inspector (JSON)
+                </div>
+                <pre id="counter-json"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: useEffect -->
+        <div id="tab-useEffect" class="hook-tab-pane">
+          <div class="playground-grid">
+            <div class="demo-card">
+              <h4><i class="fa-solid fa-clock"></i> Lifecycle & Side Effects</h4>
+              <p class="demo-hint">Simulates subscription intervals and dependency-driven data fetching with unmount
+                cleanup.</p>
+
+              <div class="interactive-box">
+                <div class="effect-timer-wrap">
+                  <div id="effect-timer" class="timer-number">0s</div>
+                  <div class="counter-controls">
+                    <button type="button" id="effect-timer-btn" class="btn-ctrl btn-primary-ctrl"
+                      onclick="toggleEffectTimer()">
+                      <i class="fa-solid fa-play"></i> Start Effect (Mount)
+                    </button>
+                    <button type="button" class="btn-ctrl" onclick="resetEffectTimer()">
+                      <i class="fa-solid fa-rotate-left"></i> Reset Timer
+                    </button>
+                  </div>
+                </div>
+
+                <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 12px;">
+                  <span style="font-size: 13px; color: #475569; font-weight: 600;">Dependency Trigger [userId]:</span>
+                  <div class="user-selector-btns">
+                    <button type="button" class="btn-ctrl" onclick="triggerEffectFetch(1)">User #1</button>
+                    <button type="button" class="btn-ctrl" onclick="triggerEffectFetch(2)">User #2</button>
+                    <button type="button" class="btn-ctrl" onclick="triggerEffectFetch(3)">User #3</button>
+                  </div>
+                  <div id="effect-data" class="fetched-data-card">Click User buttons to fetch data.</div>
+                </div>
+              </div>
+
+              <div class="action-history-box">
+                <h5>Lifecycle & Cleanup Log</h5>
+                <ul id="effect-log" class="action-history-list">
+                  <li class="empty-note">Click "Start Effect" or select a User ID to inspect lifecycle effects.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="code-state-panel">
+              <div class="code-box">
+                <div class="code-box-header"><span>TimerEffect.jsx</span><span>React</span></div>
+                <pre><code>useEffect(() => {
+  // Subscription setup
+  const interval = setInterval(() => {
+    setSeconds(s => s + 1);
+  }, 1000);
+
+  // Clean-up on unmount/re-run
+  return () => clearInterval(interval);
+}, []); // Empty deps = run on mount
+
+useEffect(() => {
+  fetchUserData(userId);
+}, [userId]); // Re-runs when userId changes</code></pre>
+              </div>
+
+              <div class="state-inspector">
+                <div class="state-inspector-header"><i class="fa-solid fa-terminal"></i> Live State Inspector (JSON)
+                </div>
+                <pre id="effect-json"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: useReducer -->
+        <div id="tab-useReducer" class="hook-tab-pane">
+          <div class="playground-grid">
+            <div class="demo-card">
+              <h4><i class="fa-solid fa-code-branch"></i> State Reducer Architecture</h4>
+              <p class="demo-hint">Dispatches predictable actions to modify state transitions without direct mutation.
+              </p>
+
+              <div class="interactive-box" style="text-align: left;">
+                <div class="todo-input-row">
+                  <input type="text" id="todo-input" placeholder="Type a task and hit Enter or Add..."
+                    onkeydown="if(event.key==='Enter') handleAddTodo()">
+                  <button type="button" class="btn-ctrl btn-primary-ctrl" onclick="handleAddTodo()">
+                    <i class="fa-solid fa-plus"></i> Add
+                  </button>
+                  <button type="button" class="btn-ctrl" onclick="dispatchReducer({ type: 'RESET' })"
+                    title="Reset to defaults">
+                    <i class="fa-solid fa-rotate-left"></i>
+                  </button>
+                </div>
+
+                <ul id="todo-list" class="todo-list-wrap"></ul>
+              </div>
+
+              <div class="action-history-box">
+                <h5>Dispatched Action Stream</h5>
+                <ul id="reducer-log" class="action-history-list">
+                  <li class="empty-note">Dispatch actions by adding, toggling, or deleting tasks.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="code-state-panel">
+              <div class="code-box">
+                <div class="code-box-header"><span>todoReducer.js</span><span>React</span></div>
+                <pre><code>function todoReducer(state, action) {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return [...state, { id: Date.now(), text: action.payload, done: false }];
+    case 'TOGGLE_TODO':
+      return state.map(t => t.id === action.payload ? { ...t, done: !t.done } : t);
+    case 'DELETE_TODO':
+      return state.filter(t => t.id !== action.payload);
+    default:
+      return state;
+  }
+}
+const [todos, dispatch] = useReducer(todoReducer, initialTodos);</code></pre>
+              </div>
+
+              <div class="state-inspector">
+                <div class="state-inspector-header"><i class="fa-solid fa-terminal"></i> Live State Inspector (JSON)
+                </div>
+                <pre id="reducer-json"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="hooks-demo.js"></script>
+</body>
+
+</html>
